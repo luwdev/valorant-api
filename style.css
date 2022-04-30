@@ -1,0 +1,310 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0F1922;
+  font-family: "Rubik" , sans-serif;
+  height: auto;
+}
+
+body ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+#container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  margin-top: 800px;
+  margin-bottom: 100px;
+}
+
+#backgroundImg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
+  height: auto;
+  z-index: -1;
+}
+
+.agentCard {
+  position: relative;
+  margin: 15px 15px 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 400px;
+  background-color: #1e2f3f;
+  color: white;
+  border: 3px solid #FF4457;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 7.5px;
+}
+
+.agentCard .agentImgContainer {
+  width: 90%;
+  height: 40%;
+  background-color: transparent;
+  margin-top: 15px;
+  border-radius: 7.5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.agentCard .agentImgContainer img {
+  position: absolute;
+  width: 70%;
+  top: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.agentCard .agentName {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.agentCard .agentDescription {
+  margin-top: 10px;
+  padding: 0px 15px 0px 15px;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.agentCard .agentButton {
+  width: 50%;
+  height: 10%;
+  margin-top: 10px;
+  border-radius: 7.5px;
+  border: none;
+  background-color: #FF4457;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  position: absolute;
+  bottom: 20px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #0f1922 #0f1922;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0f1922;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0f1922;
+  border-radius: 10px;
+  border: 2px solid #ff4457;
+}
+
+footer {
+  width: auto;
+  padding: 5px 10px 5px 5px;
+  border-bottom-right-radius: 5px;
+  background: black;
+  position: absolute;
+  top: 0;
+  color: white;
+}
+
+#background {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.547);
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.display {
+  display: none;
+}
+
+.model {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  background-color: #cacaca;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.model .modelContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.model .modelContent .modelHeader {
+  margin-top: 120px;
+  font-size: 40px;
+}
+
+.model .modelContent .modelDescrpiton {
+  padding: 80px;
+}
+
+.model .modelContent span {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: #0f2218;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.model .modelImgContainer {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.167);
+  overflow: hidden;
+}
+
+.model .modelImgContainer img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 80%;
+}
+
+.ulAb {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 200px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.abilities {
+  padding: 0;
+  position: relative;
+  text-align: left;
+  width: 230px;
+  height: 350px;
+}
+
+.abSp {
+  background-color: #0f1922;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.abSp img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.abImg {
+  width: 100%;
+}
+
+.abP {
+  text-align: center;
+  font-size: 14px;
+  padding: 15px;
+  margin-top: 0px;
+}
+
+.abH {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 100px;
+}
+/*# sourceMappingURL=style.css.map */
